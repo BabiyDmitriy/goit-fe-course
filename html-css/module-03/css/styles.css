@@ -1,28 +1,68 @@
 .html{
 
 }
+.page-header{
+    background-color:  rgb(255, 255, 255);
+}
 
 .body{font-family: 'Playfair Display',Arial,serif;
-
+color: rgb(98, 98, 98);
+font-size: 14px;
+line-height: 24px;
 }
 
-.main{
-
+.site-navigation{
+    font-size: 14px;
+    list-style: none;
 }
 
-section{
-
+.site-navigation a {
+    color: rgb(98, 98, 98);
+    font-weight: 400;
+    line-height: 17px;
+    text-transform:uppercase;
+    text-decoration: none;  
 }
 
-ul{
-
+.post-list{
+    list-style: none;
 }
 
-li{
-
+.post-list-name p {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
 }
 
-article{
-
+.post-list-item p {
+    color: rgb(180, 173, 158);
+    font-size: 14px;
+    font-weight: 24px;
+    text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-size: 20px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
