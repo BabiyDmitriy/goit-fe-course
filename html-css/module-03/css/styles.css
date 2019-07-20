@@ -1,20 +1,42 @@
 .html{
+    box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.wrapper{
+    width: 901px;
+    margin: 0 auto;
+background-color: white
 }
 .page-header{
     background-color:  rgb(255, 255, 255);
 }
 
-.body{font-family: 'Playfair Display',Arial,serif;
-color: rgb(98, 98, 98);
-font-size: 14px;
-line-height: 24px;
+.body{
+    font-family: 'Playfair Display',Arial,serif;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .site-navigation{
+    margin: 0;
+    padding: 0;    
     font-size: 14px;
     list-style: none;
 }
+.site-navigation a{
+    display: inline-block;
+}
+.site-navigation a :not(last-cild){
+    margin-right: 100px;
+}
+    
 
 .site-navigation a {
     color: rgb(98, 98, 98);
@@ -24,8 +46,21 @@ line-height: 24px;
     text-decoration: none;  
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus{
+    color: rgb(3,169,244)
+}
+
 .post-list{
     list-style: none;
+}
+
+.post-list-item p {
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    font-weight: 24px;
+    text-transform:inherit;
+    text-align: left;
 }
 
 .post-list-name p {
@@ -35,12 +70,6 @@ line-height: 24px;
     text-transform: uppercase;
 }
 
-.post-list-item p {
-    color: rgb(180, 173, 158);
-    font-size: 14px;
-    font-weight: 24px;
-    text-transform: uppercase;
-}
 
 
 
@@ -61,8 +90,3 @@ line-height: 24px;
 
 
 
-
-font-size: 20px;
-  font-family: "Playfair Display";
-  color: rgb(98, 98, 98);
-  line-height: 1.2;
