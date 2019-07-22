@@ -1,92 +1,133 @@
-.html{
+html{
     box-sizing: border-box;
 }
 
 *,
-*::before,
-*::after{
+*::after,
+*::before{
     box-sizing: inherit;
 }
+
+body{
+    font-family: "Playfair Display","Ubuntu Light",sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* img{
+    display: block;
+    width: 100%;
+    height: auto; */
 
 .wrapper{
     width: 901px;
     margin: 0 auto;
-background-color: white
-}
-.page-header{
-    background-color:  rgb(255, 255, 255);
 }
 
-.body{
-    font-family: 'Playfair Display',Arial,serif;
-    color: rgb(98, 98, 98);
-    font-size: 14px;
-    line-height: 24px;
+.menu{
+    height: 190px;
+    vertical-align: middle;
 }
 
-.site-navigation{
+.menu-navigation{
+    padding: 75px 0
+}
+.navigation li{
+    display: inline-block;
+    margin-right: 125px;
+    vertical-align: middle;
+}
+
+.menu li:last-child{
+    margin-right: 0px;
+}
+
+.navigation{
     margin: 0;
-    padding: 0;    
+    padding: 0;
     font-size: 14px;
     list-style: none;
-}
-.site-navigation a{
-    display: inline-block;
-}
-.site-navigation a :not(last-cild){
-    margin-right: 100px;
-}
-    
-
-.site-navigation a {
-    color: rgb(98, 98, 98);
-    font-weight: 400;
-    line-height: 17px;
-    text-transform:uppercase;
-    text-decoration: none;  
+    text-align: center;
+    vertical-align: middle;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus{
-    color: rgb(3,169,244)
+.navigation a {
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 24px;
+    text-align: center;
 }
+
+.navigation a:hover,
+.navigation a :focus{
+    color: #03a9f4;
+}
+
+/* post */
 
 .post-list{
-    list-style: none;
+    list-style:none ;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
 }
 
-.post-list-item p {
-    color: rgb(98, 98, 98);
-    font-size: 14px;
-    font-weight: 24px;
-    text-transform:inherit;
-    text-align: left;
+.post-list-item {
+    margin-bottom: 105px;
 }
 
-.post-list-name p {
+.post-list-item{
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+}
+
+.post-list-item p{
     font-size: 14px;
-    font-family: "Ubuntu";
-    color: rgb(180, 173, 158);
+}
+
+.post-list-about p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.post-list-item:nth-child(2n){
+    margin-right: 0px;
+}
+
+/* .post-list-image */
+
+.image-name{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Ubuntu;
     text-transform: uppercase;
+    color: #b4ad9e;
 }
 
+.post-list-title{
+    font-size: 30px;
+    line-height: 36px;
+    color: #626262;
+}
 
+/* button */
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
